@@ -1,5 +1,6 @@
 #include <gui/startscreen_screen/StartScreenView.hpp>
 #include <images/BitmapDatabase.hpp>
+#include <gui/common/DataModel.hpp>
 
 const uint16_t cBitmapNumberCirckeArr[CIRCEL_POSITIONS] =
 {
@@ -29,7 +30,7 @@ const uint16_t cEntryCodeSequence[CODE_NUMBERS] = { 4, 8, 12, 16 };
 
 StartScreenView::StartScreenView()
 {
-
+	DataModel::getInstance()->SetNextQuote();
 }
 
 void StartScreenView::setupScreen()

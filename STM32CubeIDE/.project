@@ -233,6 +233,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/DataModel.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/common/DataModel.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/FrontendApplication.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
@@ -241,6 +246,66 @@
 			<name>Application/User/gui/Model.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/model/Model.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenBennyPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screenbenny_screen/ScreenBennyPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenBennyView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screenbenny_screen/ScreenBennyView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenEgonPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screenegon_screen/ScreenEgonPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenEgonView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screenegon_screen/ScreenEgonView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenGoldBarPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screengoldbar_screen/ScreenGoldBarPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenGoldBarView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screengoldbar_screen/ScreenGoldBarView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenKjeldPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screenkjeld_screen/ScreenKjeldPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenKjeldView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screenkjeld_screen/ScreenKjeldView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenPrisonPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screenprison_screen/ScreenPrisonPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenPrisonView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screenprison_screen/ScreenPrisonView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenYvonnePresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screenyvonne_screen/ScreenYvonnePresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/ScreenYvonneView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/screenyvonne_screen/ScreenYvonneView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/StartScreenPresenter.cpp</name>
@@ -351,6 +416,36 @@
 			<name>Application/User/generated/FrontendApplicationBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/ScreenBennyViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screenbenny_screen/ScreenBennyViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/ScreenEgonViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screenegon_screen/ScreenEgonViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/ScreenGoldBarViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screengoldbar_screen/ScreenGoldBarViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/ScreenKjeldViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screenkjeld_screen/ScreenKjeldViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/ScreenPrisonViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screenprison_screen/ScreenPrisonViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/ScreenYvonneViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/screenyvonne_screen/ScreenYvonneViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/StartScreenViewBase.cpp</name>
@@ -483,14 +578,54 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/SVGDatabase.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Bars.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Bars.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Benny.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Benny.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_EgonOlsen.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_EgonOlsen.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_Explosion.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Explosion.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_GoldBar.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_GoldBar.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Kjeld.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Kjeld.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_Triangle.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Triangle.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Yvonne.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Yvonne.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/LanguageGb.cpp</name>

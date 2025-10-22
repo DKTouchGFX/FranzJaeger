@@ -4,7 +4,36 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group1" />
+    <TextGroup Id="Group1">
+      <Text Id="Benny2" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Hva' fa'en, jeg har&#10;sgu da lige fyldt på &#10;for en femmer!</Translation>
+      </Text>
+      <Text Id="Benny1" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Skide godt, Egon!</Translation>
+      </Text>
+      <Text Id="Kjeld2" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Hvad skal jeg&#10;sige til Yvonne?</Translation>
+      </Text>
+      <Text Id="Kjeld1" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Nu er det vel&#10;ikke farligt?</Translation>
+      </Text>
+      <Text Id="Egon2" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Jeg har en plan!</Translation>
+      </Text>
+      <Text Id="Egon1" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Hundehoveder, &#10;lusede amatører, &#10;elendige &#10;klamphuggere</Translation>
+      </Text>
+      <Text Id="Yvonne3" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Meget har du budt &#10;mig gennem alle &#10;disse år.</Translation>
+      </Text>
+      <Text Id="Yvonne2" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Nej, nu siger jeg&#10;dig, Egon</Translation>
+      </Text>
+      <Text Id="Yvonne1" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Nej, nu siger&#10; jeg dig Egon</Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="Unsorted" />
   </Texts>
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />

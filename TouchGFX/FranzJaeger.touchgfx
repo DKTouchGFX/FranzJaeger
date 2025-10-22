@@ -124,11 +124,46 @@
         "Name": "UnlockedScreen",
         "Components": [
           {
-            "Type": "Image",
-            "Name": "EgonOlsen",
+            "Type": "Box",
+            "Name": "Background",
             "Width": 240,
             "Height": 240,
-            "RelativeFilename": "EgonOlsen.png"
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Quote",
+            "X": 20,
+            "Y": 70,
+            "Width": 200,
+            "Height": 134,
+            "TextId": "Yvonne1",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "Button",
+            "Name": "DummyButton1",
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "Button",
+            "Name": "DummyButton2",
+            "Y": 190,
+            "Width": 240,
+            "Height": 50,
+            "Visible": false,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
           }
         ],
         "Interactions": [
@@ -136,13 +171,313 @@
             "InteractionName": "KnobPressed",
             "Trigger": {
               "Type": "TriggerPhysicalButtonClicked",
-              "ButtonKey": 53,
-              "Name": "5 - Press"
+              "ButtonKey": 53
             },
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "StartScreen"
+            }
+          },
+          {
+            "InteractionName": "RightTurn",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 54
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ScreenEgon"
+            }
+          },
+          {
+            "InteractionName": "DummyGotoGoldBar",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "DummyButton1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenGoldBar"
+            }
+          },
+          {
+            "InteractionName": "DummyGotoPrison",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "DummyButton2"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenPrison"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenEgon",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "Egon",
+            "Width": 240,
+            "Height": 240,
+            "RelativeFilename": "EgonOlsen.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "RightTurn",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 54
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ScreenBenny"
+            }
+          },
+          {
+            "InteractionName": "LeftTurn",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 52
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "UnlockedScreen"
+            }
+          },
+          {
+            "InteractionName": "Press",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 53
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Press"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenBenny",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "Benny",
+            "Width": 240,
+            "Height": 240,
+            "RelativeFilename": "Benny.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "LeftTurn",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 52
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "ScreenEgon"
+            }
+          },
+          {
+            "InteractionName": "RightTurn",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 54
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ScreenKjeld"
+            }
+          },
+          {
+            "InteractionName": "Press",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 53
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Press"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenKjeld",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "Kjeld",
+            "Width": 240,
+            "Height": 240,
+            "RelativeFilename": "Kjeld.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "RightTurn",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 54
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ScreenYvonne"
+            }
+          },
+          {
+            "InteractionName": "LeftTurn",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 52
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "ScreenBenny"
+            }
+          },
+          {
+            "InteractionName": "Press",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 53
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Press"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenYvonne",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "Yvonne",
+            "Width": 240,
+            "Height": 240,
+            "RelativeFilename": "Yvonne.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "LeftTurn",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 52
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "ScreenKjeld"
+            }
+          },
+          {
+            "InteractionName": "Press",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 53
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Press"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenPrison",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "Egon",
+            "Width": 240,
+            "Height": 240,
+            "RelativeFilename": "EgonOlsen.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Bars",
+            "X": 20,
+            "Width": 208,
+            "Height": 240,
+            "RelativeFilename": "Bars.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Press",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 53
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "UnlockedScreen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenGoldBar",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "Background",
+            "Width": 240,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "GoldBar",
+            "X": 45,
+            "Y": 55,
+            "Width": 150,
+            "Height": 131,
+            "RelativeFilename": "GoldBar.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Press",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 53
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "UnlockedScreen"
             }
           }
         ]
