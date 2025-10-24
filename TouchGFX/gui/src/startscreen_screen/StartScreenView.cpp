@@ -51,8 +51,11 @@ void StartScreenView::tearDownScreen()
 
 void StartScreenView::UpdateNumberCircle(int32_t idx)
 {
-	NumberCircle.setBitmap(touchgfx::Bitmap(cBitmapNumberCirckeArr[idx]));
-	NumberCircle.invalidate();
+	if ((idx >= 0) && (idx < CIRCEL_POSITIONS))
+	{
+		NumberCircle.setBitmap(touchgfx::Bitmap(cBitmapNumberCirckeArr[idx]));
+		NumberCircle.invalidate();
+	}
 }
 
 void StartScreenView::decrementValue()
