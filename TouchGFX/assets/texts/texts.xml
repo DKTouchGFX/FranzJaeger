@@ -5,6 +5,12 @@
   </Languages>
   <Texts>
     <TextGroup Id="Group1">
+      <Text Id="Harry2" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Ta en pilsner</Translation>
+      </Text>
+      <Text Id="Harry1" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Bare rolig drenge!,&#10;Far er hos jer</Translation>
+      </Text>
       <Text Id="Benny2" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Hva' fa'en, jeg har&#10;sgu da lige fyldt på &#10;for en femmer!</Translation>
       </Text>

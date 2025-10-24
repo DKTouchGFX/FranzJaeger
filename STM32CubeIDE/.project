@@ -598,6 +598,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Benny.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_DynamitHarry.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_DynamitHarry.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_EgonOlsen.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_EgonOlsen.cpp</locationURI>
