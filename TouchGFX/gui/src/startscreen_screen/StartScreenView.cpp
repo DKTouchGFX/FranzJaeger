@@ -60,19 +60,24 @@ void StartScreenView::UpdateNumberCircle(int32_t idx)
 
 void StartScreenView::decrementValue()
 {
-    if (mWheelIdx > 0)
-    {
-    	mWheelIdx--;
-    	UpdateNumberCircle(mWheelIdx);
-    }
+    mWheelIdx--;
+
+	if (mWheelIdx < 0)
+	{
+		mWheelIdx = CIRCEL_POSITIONS - 1;
+	}
+	
+	UpdateNumberCircle(mWheelIdx);
 }
 void StartScreenView::incrementValue()
 {
-    if (mWheelIdx < (CIRCEL_POSITIONS - 1))
-    {
-    	mWheelIdx++;
-    	UpdateNumberCircle(mWheelIdx);
-    }
+    mWheelIdx++;
+
+	if (mWheelIdx >= CIRCEL_POSITIONS)
+	{
+		mWheelIdx = 0;
+	}
+    UpdateNumberCircle(mWheelIdx);
 }
 void StartScreenView::knopPressed()
 {
